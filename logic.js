@@ -235,9 +235,9 @@ function checkGameStatus() {
             // Si le joueur ne peut jouer aucune pièce
             if (!hasMoves) {
                 if (inCheck) {
-                    alert("Checkmate. Winner : " + (currentColor === 'W' ? "Black" : "White"));
+                    alert("Échec et Mat ! Victoire des " + (currentColor === 'W' ? "Noirs" : "Blancs"));
                 } else {
-                    alert("Stalemate. Draw (No legal moves but not in check).");
+                    alert("Pat ! Match nul (Aucun mouvement légal mais pas d'échec).");
                 }
             }
         }

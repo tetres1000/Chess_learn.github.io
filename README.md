@@ -1,30 +1,25 @@
-<h1>Tabula Chess</h1>
-<h3 align="center">an assembling between <i>tabula rasa</i> meaning blank slate in latin, and chess, because this project is about an AI that learn from 0</h3>
-
+<h1 align ="center"> Tabula Chess </h1>
 
 <p align=center><br>
 <a href="https://github.com/tetres1000/Chess_learn.github.io"><img src="https://hackatime-badge.hackclub.com/U0AAPJTDHFT/chess_learn"></a>
 <br></p>
 
 <h3 align="center">
-Play against yourself, a friend or an AI all in one site and extra fast</a>
+The name is a pun for "tabula rasa" meaning Blank Slate, and chess, because of the project which is an AI that learn chess from zero.</a>
 </h3>
 
 <h1 align="center">
     showcases
 </h1>
 
-<h1 align= "center">About</h1>
-<h3 align>As my first project, I wanted something harder than what people usually code. Then, I remember a youtube video I saw fex days ago, talking about the AI of the game Alien Isolation that I find really good. And I say to myself, why not trying to do something simmilar on a chess board? So I started coding, with no competence on this domain.
+## about
+It is my first time coding ever. Kind of hard but I feel like it's in a good progress way. I got this project idea after seeing a video on youtube about the AI in alien isolation, then I started thinking "why not trying to implement a simmilar system on a chessboard?". If you have any idea about this project, don't hesitate to contact me !
 
-<h1 align= "center">
-    Features
-</h1>
+## features
+You can :
+- Play against yourself 
+- Play against a friend in local 
+- Play against an AI (The AI is kind of bad rn might have to update it) 
 
-<h3 align> This project can let people do 1v1 against friend, play against himself or against an AI, however the AI is kind of dumb rn I'll have to update it later.</h3>
-
-<h1 align ="center"> reporting issues</h1>
-<h3 align>this is a community project, and your help is very much appreciated! if you notice anything wrong during your usage of this project, please report it on the [GitHub issues tracker](https://github.com/tetres1000/Chess_learn.github.io/issues)! </h3>
-
-
-
+## reporting issues
+this is a community project, and your help is very much appreciated! if you notice anything wrong during your usage of this project, please report it on the [GitHub issues tracker](https://github.com/tetres1000/Chess_learn.github.io/issues)!
