@@ -11,7 +11,7 @@ The name is a pun for "tabula rasa" meaning Blank Slate, and chess, because of t
 <h1 align="center">
     showcases
 </h1>
-
+[demo.webm](https://github.com/tetres1000/Chess_learn.github.io/raw/refs/heads/main/media/demo.webm)
 ## about
 It is my first time coding ever. Kind of hard but I feel like it's in a good progress way. I got this project idea after seeing a video on youtube about the AI in alien isolation, then I started thinking "why not trying to implement a simmilar system on a chessboard?". If you have any idea about this project, don't hesitate to contact me !
 
