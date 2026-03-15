@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    background: #050505;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+.div {
+    display: flex;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+li {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    font-size: 0;
+}
+
+.box {
+    margin: .5px;
+    width: 75px;
+    height: 75px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+/* title*/
+h1 {
+    margin: 5px 20px 50px 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: 2px solid #202029;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+/* B/W turn, pour la couleur rechercher "// Toggling the turn" dans logic.js*/
+#tog {
+    margin: 40px 0px;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+#reset-btn {
+    background-color: #3b0f0e;
+    border: none;
+    color: white;
+    border: 2px rgb(red, green, blue) #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.all-img {
+    width: 65px;
+    position: relative;
+    bottom: 5px;
+}
+
+.all-pawn {
+    transform: scale(.67);
+}
+
+.authcont {
+    width: 100vw;
+}
+
+.author {
+    float: right;
+    margin-right: 50px;
+}
+
+@media (max-width:650px) {
+    .box {
+        width: 11vw;
+        height: 11vw;
+    }
+
+    .all-img {
+        width: 7vw;
+    }
+    #tog {
+        margin: 30px 0px;
+        font-size: 20px;
+    }
+    #reset-btn {
+        font-size: 10px;
+    }
+    h1{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    h1{
+        font-size: 20px;
+    }
+    #tog {
+        margin: 30px 0px;
+        font-size: 10px;
+    }
+
+}
+
+
+ul.card {
+    position: relative;
+    background-color: #2c3e50; 
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+ul.card::after, ul.card::before {
+  content: '';
+  position: absolute;
+  
+  width: 650px;
+    height: 650px;
+  background-image: conic-gradient(from var(--angle), #000000, #363636, #7a7a7a, #363636, #000000);
+  top: -34px;
+  left: 305px;
+  translate: -50% -50%;
+  z-index: -1; 
+  border-radius: 10px; 
+  animation: 10s spin linear infinite;
+}
+
+ul.card::before {
+  filter: blur(1.5rem);
+  opacity: 0.25;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+
+
+#pendule-container {
+    position: absolute;   
+    left: 1400px;            
+    top: 450px;             
+    transform: translateY(-50%); 
+    
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    z-index: 10;         
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+#menu-pendule {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#temps-initial {
+    width: 70px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.pendule {
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: monospace;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.pendule-active {
+    background-color: #e74c3c;
+    border-color: #fff;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.9);
+    transform: scale(1.05); 
+}
+
+#message-fin {
+    color: #ff4757;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 800px) {
+    #pendule-container {
+        display: none; 
+    }
+}
